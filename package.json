@@ -13,7 +13,7 @@
     "@ai-sdk/google": "^0.0.51",
     "@ai-sdk/mistral": "^0.0.42",
     "@ai-sdk/openai": "^0.0.66",
-    "@e2b/code-interpreter": "^0.0.9-beta.3",
+    "@e2b/code-interpreter": "^1.1.0",
     "@radix-ui/react-avatar": "^1.1.1",
     "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-dropdown-menu": "^2.1.2",
