@@ -80,7 +80,12 @@ export function ChatPicker({
           </SelectTrigger>
           <SelectContent>
             {Object.entries(
-              Object.groupBy(models, ({ provider }) => provider)
+              models.reduce((acc, model) => {
+                const provider = model.provider;
+                acc[provider] = acc[provider] || [];
+                acc[provider].push(model);
+                return acc;
+              }, {} as Record<string, typeof models>)
             ).map(([provider, models]) => (
               <SelectGroup key={provider}>
                 <SelectLabel>{provider}</SelectLabel>
